@@ -1,0 +1,184 @@
+@import '~antd/dist/antd.css';
+
+@font-face {
+  font-family: 'din-round';
+  font-style: normal;
+  font-weight: 300;
+  src: url(./fonts/DINNextRoundedLTPro-Regular.woff) format("woff")
+}
+
+@font-face {
+  font-family:'din-round';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./fonts/DINNextRoundedLTPro-Bold.woff) format("woff")
+}
+
+@font-face {
+  font-family: 'museo-sans-rounded';
+  src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-300-webfont.eot');
+  src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-300-webfont.eot?#iefix') format('embedded-opentype'),url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-300-webfont.woff2') format('woff2'),url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-300-webfont.woff') format('woff'),url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-300-webfont.svg#museo_sans_rounded300') format('svg');
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'museo-sans-rounded';
+  src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-500-webfont.eot');
+  src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-500-webfont.eot?#iefix') format('embedded-opentype'),url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-500-webfont.woff2') format('woff2'),url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-500-webfont.woff') format('woff'),url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-500-webfont.svg#museo_sans_rounded500') format('svg');
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'museo-sans-rounded';
+  src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-700-webfont.eot');
+  src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-700-webfont.eot?#iefix') format('embedded-opentype'),url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-700-webfont.woff2') format('woff2'),url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-700-webfont.woff') format('woff'),url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-700-webfont.svg#museo_sans_rounded700') format('svg');
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Nordique Pro Bold';
+  font-weight: normal;
+  font-style: normal;
+  src: url(./fonts/Nordique.eot);
+  src: url(./fonts/Nordique_eot.eot) format('embedded-opentype'), 
+       url(./fonts/Nordique.woff2) format('woff2'),
+       url(./fonts/Nordique.woff) format('woff'),
+       url(./fonts/Nordique.ttf) format('truetype');
+}
+
+body{
+  font-family: "museo-sans-rounded";
+}
+
+#header {
+    background: #1cb0f6;
+    box-shadow: 0 3px 5px rgba(0,0,0,.01);
+    position: relative;
+    z-index: 10;
+    height: 70px;
+    border-bottom: 1px solid #eee;
+  }
+  
+#logo {
+    overflow: hidden;
+    padding-left: 10px;
+    float: left;
+    line-height: 70px;
+    text-decoration: none;
+    height: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .header-meta {
+    padding-right: 10px !important;
+    zoom: 1;
+  }
+
+}
+
+#logo img {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+#logo span {
+    color: black;
+    outline: none;
+    font-size: 14px;
+    line-height: 28px;
+}
+  
+.header-meta {
+    padding-right: 40px;
+    zoom: 1;
+}
+
+.header-meta::before{
+    content: '';
+    display: table;
+}
+
+.header-meta::after{
+    clear: both;
+}
+
+#preview {
+    padding-top: 13px;
+    float: right;
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#preview button {
+    border-radius: 32px;
+}
+  
+#preview-button .ant-btn {
+      color: black;
+}
+
+#menu {
+    float: right;
+    overflow: hidden;
+    height: 64px;
+    
+}
+
+#menu .ant-menu {
+  line-height: 60px;
+}
+
+#menu .ant-menu-horizontal {
+  border-bottom: none;
+}
+
+#menu .ant-menu-horizontal > .ant-menu-item {
+  border-top: 2px solid transparent;
+}
+
+#menu .ant-menu-horizontal > .ant-menu-item:hover {
+  border-top: 2px solid #1890ff;
+  border-bottom: 2px solid transparent;
+}
+#menu .ant-menu-horizontal > .ant-menu-item:hover a{
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#menu .ant-menu-horizontal > .ant-menu-item-selected {
+  border-top: 2px solid #1890ff;
+  border-bottom: 2px solid transparent;
+  
+}
+
+#menu .ant-menu-horizontal > .ant-menu-item-selected a {
+  color: #1890ff;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active{
+  font-weight: 700 !important;
+}
+
+.design-text-btn{
+  color: #999999;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.design-flex{
+  display: flex;
+}
+
+.design-input input {
+  border-radius: 15px;
+  border: 2px solid #e5e5e5;
+  background-color: #f7f7f7;
+}
+
